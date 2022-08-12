@@ -13,7 +13,16 @@ public class Car extends BaseEntity{
     private String name;
     private String model;
     private String description;
+    private int stock;
     private Long price;
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
 
     public String getName() {
         return name;

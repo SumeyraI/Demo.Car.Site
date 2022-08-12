@@ -1,5 +1,6 @@
 package com.car.spring.demo.car.site.dto;
 
+import com.car.spring.demo.car.site.entities.Car;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import lombok.*;
 
@@ -11,7 +12,16 @@ public class CarDto extends BaseDto{
     private String name;
     private String model;
     private String description;
+    private int stock;
     private Long price;
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
 
     public String getName() {
         return name;
